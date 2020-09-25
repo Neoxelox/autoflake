@@ -128,6 +128,26 @@ Below is the full listing of options::
       --version             show program's version number and exit
 
 
+Configururation
+===============
+Configure default arguments using a ``pyproject.toml`` file:
+
+.. code-block:: toml
+
+    [tool.autoflake]
+    check = true
+    imports = ["django", "requests", "urllib3"]
+
+
+Or a ``setup.cfg`` file:
+
+.. code-block:: ini
+
+    [autoflake]
+    check=true
+    imports=django,requests,urllib3
+
+
 Tests
 =====
 
